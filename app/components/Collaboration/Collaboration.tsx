@@ -40,190 +40,143 @@ const Collaboration = (props: Props) => {
                 <motion.div initial={{height:0}} whileInView={{height:'100%'}} transition={{delay:0.8}}  className=" h-full w-[3px] mt-7 rounded-md bg-gradient-to-b from-[#ffd6cc] via-[#ec6547] to-transparent" ></motion.div>
             </div>
             <motion.div initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} transition={{delay:0.6, type:'tween'}} className='md:w-10/12 mb-24'>
-                <h2 className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Collaboration</h2>  
+                <h2 className="text-[20px] md:text-2xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '200ms'}}>Teaching</h2>  
                 <h3 className="text-[28px] md:text-[40px] max-md:leading-8 max-lg:leading-10 lg:text-5xl mb-7 font-medium text-white js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: '300ms'}}>
-                    <span className="text-[#ffa28b]">Supercharge collaboration.</span>
-                     We provide unlimited repositories, best-in-class version control, and the world’s most powerful open source community—so your team can work more efficiently together.
+                    <span className="text-[#ffa28b]">Our Ways of teaching.</span>
+                    We offer courses aimed at ensuring students can learn while enjoying themselves. <br></br><p  className="text-[#ffa28b]"></p>Our approach involves guiding learners through interactive exercises and fostering imagination every step of the way
                 </h3>
             </motion.div>
         </div>
-        <img className="w-full h-auto d-block rounded-lg border-[1px] border-[#30363d]  " width="2500" height="1500" loading="lazy" decoding="async" alt="Illustration of project table view with cards grouped by 'Feature planning' phase." src="https://github.githubassets.com/images/modules/site/issues/illo/issues-plan.png"></img>
+        <img className="d-block rounded-lg border-[1px] border-[#30363d]" style={{ marginLeft: '6em'  }} width="700" height="250"  loading="lazy" decoding="async" alt="Illustration of project table view with cards grouped by 'Feature planning' phase." src="https://i.postimg.cc/nzz2wF3p/Screenshot-2021-12-27-at-12-38-53.png"></img>
         <Discount/>
         <div className='flex justify-between items-center'>
             <div className='flex justify-between md:space-x-10 max-md:flex-col'>
                 <HoverCard backgroundColor='#ffa28b' direction='flex-col' left='0'>
                     <div className='md:flex flex-col flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 '>
-                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>GitHub Actions</span>  automates your build, test, and deployment workflow with simple and secure CI/CD.</p>
+                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Examine our curiculum</span>  which provides a detailed week-by-week breakdown of topics covered in two-hour sessions each week. Courses will be adjusted based on the needs of the group.</p>
                         <div>
-                        <a onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
-                            Enable GitHub Discussion
+                        <a onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} href="https://drive.google.com/file/d/1z_MPlsja8-9bbzNoSihVxuiZKgYNwKCw/view?usp=sharing" className='py-1 inline-block text-xl text-white font-semibold'>
+                            Unveil the Curriculum
                             <svg xmlns="http://www.w3.org/2000/svg" className={` mb-[2px] text-white transition inline-block ml-3 ease-in duration-300  ${hovered ? "translate-x-0 ": "-translate-x-1"}`} width="20" height="20" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className={` text-white transition ease-in duration-150 ${hovered ? " opacity-100" : "opacity-0 "}`} stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                             <div className={` ${hovered ? "w-11/12 scale-100" : "w-0 scale-0"} origin-left  transition ease-in duration-300 h-[2.5px] bg-white rounded-full`}></div>
                         </a>
                         </div>
                     </div>
                     <motion.div initial={{y:20, opacity:0}} whileInView={{y:0, opacity:1}} transition={{type:'tween', duration:0.3}} className='overflow-hidden rounded-s-lg'>
-                        <img className="w-full h-auto" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-discussions.png?width=1208&format=webpll" />
+                        <img className="w-full h-auto" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://i.postimg.cc/cHYWB9Yv/everything.gif" />
                     </motion.div>
                 </HoverCard>
                 <HoverCard backgroundColor='#ffa28b' direction='flex-col' left='-400px'>
                     <div className='md:flex flex-col  flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32 '>
-                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>GitHub Mobile</span>   fits your projects in your pocket, so you never miss a beat while on the go.</p>
+                        <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-semibold'>Ultimate Learning Environment!</span>   Our courses feature interactive sessions where students collaborate in groups, fostering teamwork and mutual support as they learn together.</p>
                         <div>
-                            <a onMouseEnter={() => setHovered1(true)} onMouseLeave={() => setHovered1(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
-                                Check out pull request
-                                <svg xmlns="http://www.w3.org/2000/svg" className={` mb-[2px] text-white transition inline-block ml-3 ease-in duration-300  ${hovered1 ? "translate-x-0 ": "-translate-x-1"}`} width="20" height="20" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className={` text-white transition ease-in duration-150 ${hovered1 ? " opacity-100" : "opacity-0 "}`} stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                                <div className={` ${hovered1 ? "w-11/12 scale-100" : "w-0 scale-0"} origin-left  transition ease-in duration-300 h-[2.5px] bg-white rounded-full`}></div>
-                            </a>
+                           
                         </div>
                     </div>
                     <div className='overflow-hidden rounded-s-lg'>
-                    <motion.img initial={{y:20, opacity:0}} whileInView={{y:0, opacity:1}} transition={{type:'tween', duration:0.3}} className="w-full h-auto " width="1208" height="764" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://github.githubassets.com/images/modules/site/home-campaign/illu-pull-requests.png?width=1208&format=webpll" />
+                    <motion.div className="flex justify-center items-center">
+                    <motion.div variants={container} initial='hidden' whileInView='show' className='relative flex text-[17px] flex-col md:flex-row lg:my-10 flex-1 justify-between w-10/12 mx-auto md:gap-10'>
+                    <motion.div variants={item} transition={{type:'tween'}} className='animate w-full'>
+                        <div className="pt-2 pb-1 px-6 text-[15px] rounded-t-md inline-block font-medium text-white" style={{background: 'rgba(235, 245, 255, 0.2)'}}>
+                            John
+                        </div>
+                        <div className='p-6 mb-10 box-shadow-mktg-xl rounded-tl-none rounded-md' style={{background: 'rgba(235, 245, 255, 0.2)'}}>
+                            <ul className='-mb-6'>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Discuss Problem</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Design</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Experiment</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </motion.div>
+                    <motion.div variants={item} transition={{type:'tween'}} className='absolute md:top-12   lg:left-[47%] md:left-[46%] max-md:top-[88px] z-[1] flex items-center max-md:rotate-90'>
+                        <div className="inline-block rounded-full p-1 bg-[#6e7681]" style={{boxShadow: '0 0 0 2px #444D56'}}></div>
+                        <div style={{width: '37px', height: '2px', background: '#D1D5DA'}}></div>
+                        <div className="inline-block rounded-full p-1 bg-[#6e7681]" style={{boxShadow: '0 0 0 2px #444D56'}}></div>
+                    </motion.div>
+                    <motion.div variants={item} transition={{type:'tween'}} className='animate w-full'>
+                        <div className="pt-2 pb-1 px-6 text-[15px] rounded-t-md inline-block font-medium text-white" style={{background: 'rgba(235, 245, 255, 0.2)'}}>
+                            David
+                        </div>
+                        <div className='p-6 mb-10 box-shadow-mktg-xl rounded-tl-none rounded-md' style={{background: 'rgba(235, 245, 255, 0.2)'}}>
+                            <ul className='-mb-6'>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Analyze</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Build</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                                <li className='mb-6 flex items-center justify-between'>
+                                    <div className='flex items-center'>
+                                        <svg aria-hidden="true" height="24" fill='#3fb950' viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" className="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+                                        </svg>
+                                        <span className="font-medium text-white">Test</span>
+                                    </div>
+                                    <span className="text-[14px] text-[#7d8590]">1m 21s</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </motion.div>
+                </motion.div>
+</motion.div>
+
                     </div>
                 </HoverCard>
             </div>
         </div>
         <HoverCard backgroundColor='#ffa28b' direction='' left=''>
           <div className='md:flex flex-col md:space-y-20 flex-1 py-20 p-10  justify-between'>
-              <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-medium'>GitHub Sponsors</span>  lets you support your favorite open source maintainers and projects.</p>
+              <p className=" text-xl md:text-2xl mb-6 font-medium text-[#7d8590]"><span className='text-white font-medium'>We're enhancing our courses</span>  to ensure they're more accessible for students, focusing on delivering valuable skills applicable to future careers or hobbies. Keep an eye out for our latest offerings, including new courses in <span className='text-[#7ee787]'>React, C, and Linux</span>. <span className='text-[#ffa28b] font-medium'>Stay tuned for more exciting updates!</span>
+
+
+
+
+</p>
               <div>
-                <a onMouseEnter={() => setHovered2(true)} onMouseLeave={() => setHovered2(false)} href="" className='py-1 inline-block text-xl text-white font-semibold'>
-                    Check out pull request
+                <a onMouseEnter={() => setHovered2(true)} onMouseLeave={() => setHovered2(false)} href="https://drive.google.com/file/d/1Jo8skKw58-6bOhXH_uL1cmBMbrsuTAbj/view?usp=sharing" className='py-1 inline-block text-xl text-white font-semibold'>
+                    See Future Curriculum
                     <svg xmlns="http://www.w3.org/2000/svg" className={` mb-[2px] text-white transition inline-block ml-3 ease-in duration-300  ${hovered2 ? "translate-x-0 ": "-translate-x-1"}`} width="20" height="20" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className={` text-white transition ease-in duration-150 ${hovered2 ? " opacity-100" : "opacity-0 "}`} stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                     <div className={` ${hovered2 ? "w-11/12 scale-100" : "w-0 scale-0"} origin-left  transition ease-in duration-300 h-[2.5px] bg-white rounded-full`}></div>
                 </a>
               </div>
           </div>
-          <div className='overflow-hidden rounded-s-lg z-[1] flex-1'>
-              <motion.div variants={container} initial='hidden' whileInView='show'  className='flex flex-wrap w-full relative -top-[120px] -rotate-12 -right-6 -mt-6  p-6 max-h-[480px]'>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className="d-block rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/homebrew.png" />
-                        <div className="text-[#7d8590] my-2">Homebrew</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className=" rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/directus.png" />
-                        <div className="text-[#7d8590] my-2">Directus</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className=" rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/dayhaysoos.jpeg" />
-                        <div className="text-[#7d8590] my-2">Nick DeJesus</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className=" rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/imolorhe.jpeg" />
-                        <div className="text-[#7d8590] my-2">Samuel</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className=" rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/commandpost.png" />
-                        <div className="text-[#7d8590] my-2">CommandPost</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/kazupon.jpeg" />
-                        <div className="text-[#7d8590] my-2">kazuya kawaguchi</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/prophen.jpeg" />
-                        <div className="text-[#7d8590] my-2">Nikema</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/sindresorhus.jpeg" />
-                        <div className="text-[#7d8590] my-2">sindresorhus</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-                  <motion.div variants={item} transition={{type:'tween'}} className='w-1/3 '>
-                      <a href="" target='_blank' className='rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6'>
-                        <img alt="Homebrew avatar" width="96" height="96" className="rounded-md" loading="lazy" decoding="async" src="https://github.githubassets.com/images/modules/site/home-campaign/sponsors/eslint.png" />
-                        <div className="text-[#7d8590] my-2">ESLint</div>
-                        <button type="button" className=' bg-[#21262d] rounded-md '>
-                            <span className='flex items-center justify-between px-2 py-1 space-x-2'>
-                              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill='currentColor' version="1.1" width="16" data-view-component="true" className="octicon octicon-heart text-[#c9d1d9]">
-                                  <path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"></path>
-                              </svg>
-                              <span className="Button-label text-[#c9d1d9]">Sponsor</span>
-                            </span>
-                        </button>
-                      </a>
-                  </motion.div>
-              </motion.div>
-          </div>
+          
         </HoverCard>
         <motion.div initial={{height:0}} whileInView={{height:'160px'}} transition={{delay:0.2}} className=" md:ml-10 ml-3 h-[160px] mt-[-20px] w-[3px] rounded-md bg-gradient-to-b from-transparent via-[#797ef9] to-[#abb4ff]" ></motion.div>
   </div>
