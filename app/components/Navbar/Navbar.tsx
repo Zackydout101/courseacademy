@@ -20,8 +20,8 @@ const Navbar = (props: Props) => {
                 <div className='lg:hidden'>
                         <a href="" className='px-2 py-[6px] border-[1px] rounded-md hover:text-neutral-400'>Sign up</a>
                 </div>
-                <a className='' href="https://github.com">
-                <img src="" style={{ transform: 'scale(0.9)', marginBottom: "2em"  }} alt="CourseAcademy Logo" height="44" className="my-3  w-[200px]"/>
+                <a className='' href="">
+                <img src="https://i.postimg.cc/90PRBVsW/Color-logo-no-background.png" style={{ transform: 'scale(0.9)', marginBottom: "2em"  }} alt="CourseAcademy Logo" height="44" className="my-3  w-[200px]"/>
                 </a>
                 <button type='button' onClick={() => setShowNav(!showNav)} className='lg:hidden cursor-pointer'>
                     <div className={`w-[23px] h-[2px] transition ease-in duration-150  bg-white ${showNav ? "rotate-45 mb-0  translate-y-[1px]" : "rotate-0 mb-1"} `}></div>

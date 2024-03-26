@@ -63,7 +63,7 @@ const Security = (props: Props) => {
                 <div className='flex w-10/12 flex-col mx-auto'>
             <div className="text-[#7d8590] p-6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <div className="font-medium">Our Instructors</div>
-    <div className="text-[#939aff] font-medium">Interned at BlackBerry</div>
+    <div className="text-[#939aff] font-medium">Interned at BlackBerry | Graduated from Lycée Claudel</div>
     <img src="https://i.postimg.cc/Ls1s2CVk/Untitled-Project.png"  alt="BlackBerry logo" className="my-3"/>
 
     <span className="text-[12px] f6">Zachary Levesque-Bartlett - 3rd year Soft Eng</span>
@@ -77,7 +77,7 @@ const Security = (props: Props) => {
             <div className="text-[#939aff] font-medium">Interned at Nokia</div>
     <img src="https://i.postimg.cc/mgHQ5GnB/Untitled-Project-1.png" style={{ width:"50%"}}  alt="BlackBerry logo" className="my-3"/>
 
-    <span className="text-[12px] f6">Zackary Trenholme - 4th Year Soft Eng</span>
+    <span className="text-[12px] f6">David Une - 4th Year Soft Eng</span>
 </div>
               
                 

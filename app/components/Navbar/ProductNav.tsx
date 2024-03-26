@@ -28,10 +28,7 @@ const ProductNav = (props: Props) => {
     }
    return (
         <li  >
-            <button  type='button' className={`flex items-center p-1 max-lg:font-semibold  transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${show ? "lg:text-neutral-300 ": ""}`}>
-                Our Courses
-                
-            </button>
+            
             <div className={`relative lg:absolute lg:flex -ml-5 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${show ? "opacity-100 " : "opacity-0 invisible max-lg:hidden"}`}>
                 
                 <div className='lg:px-8 lg:pr-20 py-2 max-lg:pl-6'>

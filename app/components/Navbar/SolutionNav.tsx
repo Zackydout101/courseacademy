@@ -27,10 +27,7 @@ const SolutionNav = (props: Props) => {
     }
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <button onClick={handleOnclick}  type='button' className={`flex max-lg:font-semibold  items-center p-1 max-lg:justify-between max-lg:w-full ${show ? "lg:text-neutral-300": ""}`}>
-            Teach Strategy
-          
-        </button>
+      
        
            
         
